@@ -25,9 +25,9 @@ To run this program just execute:
 
 Execute the following command to trigger the help:
 ```
-./gradlew run
+./gradlew appendCards
 
-> Task :run
+> Task :appendCards
 []
 Usage:
 printableCardAppender <input_folder> [output_folder image_format isLandscape ppi margin]OPTIONS:
@@ -43,6 +43,10 @@ printableCardAppender <input_folder> [output_folder image_format isLandscape ppi
 ## Example:
 Basic call to the program to get A4 printable cards:
 ```
-./gradlew run --args="../myCardGameFolder ../appendedCards/printableA4Cards"
+./gradlew appendCards --args="../myCardGameFolder ../appendedCards/printableA4Cards"
 ```
-
+# Make Sprite
+Make sprite transforms an image into sprites. It uses a mask to remove images parts and make them transparent.
+```shell
+./gradlew makeSprite --args="../windwalkers-cardgame/_terrain/  ../windwalkers-cardgame/ui_assets/mask.png ../windwalkers-ui/Windwalkers/Assets/Resources/_terrain"
+```
