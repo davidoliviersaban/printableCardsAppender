@@ -10,12 +10,12 @@ repositories {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:3.0.9'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.22' // Replace with the latest compatible version
 }
 
 task appendCards(dependsOn: 'classes', type: JavaExec) {
