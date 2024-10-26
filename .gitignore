@@ -1,5 +1,7 @@
 .gradle/
 .idea/
 build/
+.vscode/
+bin/
 
 makeSprite.sh
